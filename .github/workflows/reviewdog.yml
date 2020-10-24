@@ -15,4 +15,4 @@ jobs:
       - name: golangci-lint
         uses: reviewdog/action-golangci-lint@v1
         with:
-          golangci_lint_flags: "--no-config --issues-exit-code=1 --enable-all --disable=gomnd --disable=funlen --disable=goerr113 --disable=godot --disable=lll --disable=gocyclo --disable=gochecknoinits --disable=nakedret --disable=gochecknoglobals --tests=false --disable=goimports --disable=wsl --skip-dirs "(^|/)templates($|/)""
+          golangci_lint_flags: "--no-config --issues-exit-code=1 --enable-all --disable=gomnd --disable=funlen --disable=goerr113 --disable=godot --disable=lll --disable=gocyclo --disable=gochecknoinits --disable=nakedret --disable=gochecknoglobals --tests=false --disable=goimports --disable=wsl --skip-dirs \"(^|/)templates($|/)\""
