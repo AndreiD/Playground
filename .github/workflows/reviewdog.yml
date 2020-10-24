@@ -6,13 +6,18 @@ on:
     branches: [ master ]
 
 jobs:
-  golangci-lint:
-    name: runner / golangci-lint
+  reviewdog:
+    name: reviewdog
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code into the Go module directory
-        uses: actions/checkout@v1
-      - name: golangci-lint
-        uses: reviewdog/action-golangci-lint@v1
-        with:
-          golangci_lint_flags: "--no-config --issues-exit-code=1 --enable-all --disable=gomnd --disable=funlen --disable=goerr113 --disable=godot --disable=lll --disable=gocyclo --disable=gochecknoinits --disable=nakedret --disable=gochecknoglobals --tests=false --disable=goimports --disable=wsl --skip-dirs \"(^|/)templates($|/)\""
+      # ...
+      - name: Setup reviewdog
+        run: |
+          mkdir -p $HOME/bin && curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s -- -b $HOME/bin
+          echo ::add-path::$HOME/bin
+          echo ::add-path::$(go env GOPATH)/bin # for Go projects
+      - name: Run reviewdog
+        run: |
+          reviewdog -reporter=github-pr-check -runners=golint,govet
+          # or
+          reviewdog -reporter=github-pr-review -runners=golint,govet
