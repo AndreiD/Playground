@@ -1,0 +1,14 @@
+{
+  "description": "Amazing test images immortalized on the blockchain.",
+  "external_url": "www.placeholder.com",
+  "image": "www.placeholder.com",
+  "name": "test 9",
+  "animation_url":"www.placeholder.com",
+  "attributes": [
+    {
+      "trait_type": "Accessory",
+      "value": "Pink Dots"
+    }
+  
+  ]
+}
