@@ -1,7 +1,7 @@
 {
   "description": "Amazing test images immortalized on the blockchain.",
   "external_url": "www.placeholder.com",
-  "image": "www.placeholder.com",
+  "image": "https://raw.githubusercontent.com/AndreiD/Playground/master/nfts_sample/images/5.jpg",
   "name": "test 5",
   "animation_url":"www.placeholder.com",
   "attributes": [
