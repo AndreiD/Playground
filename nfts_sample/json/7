@@ -3,7 +3,7 @@
   "external_url": "www.placeholder.com",
   "image": "https://raw.githubusercontent.com/AndreiD/Playground/master/nfts_sample/images/7.jpg",
   "name": "test 7",
-  "animation_url":"www.placeholder.com",
+  "animation_url":"https://raw.githubusercontent.com/AndreiD/Playground/master/nfts_sample/gltf/7.gltf",
   "attributes": [
     {
       "trait_type": "Accessory",
