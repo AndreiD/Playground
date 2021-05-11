@@ -1,8 +1,8 @@
 {
   "description": "AI POD 2",
   "external_url": "www.placeholder.com",
-  "image": "https://raw.githubusercontent.com/AndreiD/Playground/master/nfts_sample/images/0.jpg",
-  "name": "AI POD 1",
+  "image": "https://raw.githubusercontent.com/AndreiD/Playground/master/nfts_sample/images/2.jpg",
+  "name": "AI POD 2",
   "attributes": [
     {
       "trait_type": "generation",
